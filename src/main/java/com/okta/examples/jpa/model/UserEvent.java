@@ -3,7 +3,6 @@ package com.okta.examples.jpa.model;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -11,6 +10,8 @@ import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+
+import org.hibernate.annotations.Entity;
 
 @Entity
 public class UserEvent {
