@@ -1,6 +1,6 @@
 package com.okta.examples.jpa.model;
 
-import javax.persistence.Entity;
+import javax.persistence.Entity;	
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -13,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
+@Table(name="user_event")
 public class UserEvent {
 
     private static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'");
