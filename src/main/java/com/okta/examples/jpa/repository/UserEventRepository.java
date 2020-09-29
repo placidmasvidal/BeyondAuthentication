@@ -1,10 +1,9 @@
 package com.okta.examples.jpa.repository;
 
-import java.util.List;
-
+import com.okta.examples.jpa.model.UserEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.okta.examples.jpa.model.UserEvent;
+import java.util.List;
 
 public interface UserEventRepository extends JpaRepository<UserEvent, Long> {
 

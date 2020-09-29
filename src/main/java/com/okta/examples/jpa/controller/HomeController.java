@@ -4,6 +4,8 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.List;
 
+import com.okta.examples.jpa.model.UserEvent;
+import com.okta.examples.jpa.repository.UserEventRepository;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.ui.Model;
@@ -13,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
-import com.okta.examples.jpa.model.UserEvent;
-import com.okta.examples.jpa.repository.UserEventRepository;
+import java.time.Instant;
+import java.util.Date;
+import java.util.List;
 
 @RestController
 public class HomeController {
